@@ -1,0 +1,10 @@
+Abstract
+
+Maintenance optimization in the aviation industry is critical for reducing operational costs and ensuring fleet safety and reliability. This project explores the integration of physics-informed machine learning techniques to enhance predictive maintenance scheduling and tail assignment processes. By leveraging advanced models, including Graph Neural Networks (GNNs) and Fully Connected Neural Networks (FCNNs), the framework detects engine anomalies and predicts the Remaining Useful Life (RUL) of key components. A physics-informed approach ensures predictions remain consistent with the underlying thermodynamic principles governing turbofan engines.
+
+The study was conducted using the C-MAPSS dataset and real-world data from Swiss International Airlines’ Boeing 777 fleet equipped with GE90 engines. The GNN was employed to identify sensor anomalies, generating residuals that served as input for the FCNN to predict RUL. The results highlighted the challenges in achieving high RUL accuracy, with the Root Mean Squared Error (RMSE) remaining above the target range, likely due to the subtle nature of residual trends and the complexity of hyperparameter tuning. Despite these limitations, the models provided valuable insights into engine degradation patterns.
+
+To further optimize maintenance planning, the predictive framework was integrated into a dynamic tail assignment model using a Mixed-Integer Linear Programming (MILP) approach. This allowed the assignment of aircraft to routes based on health data, minimizing downtime and reducing Aircraft on Ground (AOG) incidents. The results demonstrated the potential of predictive maintenance in improving fleet availability and operational efficiency.
+
+Future research could focus on incorporating real-time data directly into the models, enabling in-flight predictions and proactive maintenance scheduling. Deploying these models on aircraft systems could revolutionize maintenance practices by preventing failures before they occur, ensuring safer and more reliable airline operations.
+ 
